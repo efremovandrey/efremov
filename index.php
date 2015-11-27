@@ -37,10 +37,10 @@ name="submit" value="Submit" />
 </form>
 <?php
 // DB connection info
-$host = "tcp:qagmpmy2wy.database.windows.net,143";
-$user = "efremov";
+$host = "tcp:qagmpmy2wy.database.windows.net,1433";
+$user = "efremov@qagmpmy2wy";
 $pwd = "1Qwertyu";
-$db = "efremovAu91BFbnU";
+$db = "efremovAu91BFbnU"
 // Connect to database.
 try {
     $conn = new PDO
