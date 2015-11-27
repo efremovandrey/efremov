@@ -15,7 +15,7 @@ PDO::ERRMODE_EXCEPTION );
     PRIMARY KEY(id),
     name VARCHAR(30),
     email VARCHAR(30),
-    date DATE)";
+    date DATA)";
     $conn->query($sql);
 }
 catch(Exception $e){
