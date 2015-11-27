@@ -1,9 +1,9 @@
 <?php
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
-$user = "efremov";
+$user = "efremov@qagmpmy2wy";
 $pwd = "1Qwertyu";
-$db = "efremovAu91BFbnU";
+$db = "efremovAu91BFbnU"
 try{
     $conn = new PDO
 ( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
