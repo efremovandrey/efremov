@@ -1,5 +1,6 @@
 #efremov
 <?php
+header("Content-Type: text/html; charset=UTF-8")
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
 $user = "efremov@qagmpmy2wy";
