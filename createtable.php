@@ -14,9 +14,9 @@ PDO::ERRMODE_EXCEPTION );
     $sql = "CREATE TABLE registration_tb(
     id INT NOT NULL IDENTITY(1,1) 
     PRIMARY KEY(id),
-    name VARCHAR(30),
+    имя VARCHAR(30),
     email VARCHAR(30),
-    date DATE)";
+    дата DATE)";
     $conn->query($sql);
 }
 catch(Exception $e){
