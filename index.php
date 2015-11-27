@@ -20,6 +20,7 @@ margin-bottom: 0; padding-bottom: 0; }
  text-align: left; border: none; padding-left: 0; }
     td { padding: 0.25em 2em 0.25em 0em; 
 border: 0 none; }
+body { background: url http://allparket.com/mod/wiki/images/bands/1337570133_1_yslygi_po_registrasii_firmu_fs_readmas.ru_3.jpg; }
 </style>
 </head>
 <body>
