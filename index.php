@@ -24,17 +24,15 @@ border: 0 none; }
 </head>
 <body>
 <h1>Регистрация</h1>
-<p>Fill in your name and 
-email address, then click <strong>Submit</strong> 
-to register.</p>
+<p>Заполните ваше имя и адрес электронной почты, затем нажмите кнопку Отправить, чтобы зарегистрироваться.</p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
-      Name  <input type="text" 
+      Имя  <input type="text" 
 name="name" id="name"/></br>
       Email <input type="text" 
 name="email" id="email"/></br>
       <input type="submit" 
-name="submit" value="Submit" />
+name="submit" value="Отправить" />
 </form>
 <?php
 // DB connection info
