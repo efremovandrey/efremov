@@ -3,12 +3,7 @@
 <Title>Registration Form</Title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-    body { background-color:
- #fff; border-top: solid 10px #000;
- color: #333; font-size: .85em;
- margin: 20; padding: 20;
- font-family: "Segoe UI",
- Verdana, Helvetica, Sans-Serif;
+    body {  url http://allparket.com/mod/wiki/images/bands/1337570133_1_yslygi_po_registrasii_firmu_fs_readmas.ru_3.jpg;
     }
     h1, h2, h3,{ color: #000; 
 margin-bottom: 0; padding-bottom: 0; }
@@ -20,7 +15,6 @@ margin-bottom: 0; padding-bottom: 0; }
  text-align: left; border: none; padding-left: 0; }
     td { padding: 0.25em 2em 0.25em 0em; 
 border: 0 none; }
-body { background: url http://allparket.com/mod/wiki/images/bands/1337570133_1_yslygi_po_registrasii_firmu_fs_readmas.ru_3.jpg; }
 </style>
 </head>
 <body>
