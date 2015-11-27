@@ -1,6 +1,7 @@
 <html>
 <head>
 <Title>Registration Form</Title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
     body { background-color:
  #fff; border-top: solid 10px #000;
@@ -22,7 +23,7 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Register here!</h1>
+<h1>Регистрация</h1>
 <p>Fill in your name and 
 email address, then click <strong>Submit</strong> 
 to register.</p>
@@ -75,7 +76,7 @@ $sql_select = "SELECT * FROM registration_tb";
 $stmt = $conn->query($sql_select);
 $registrants = $stmt->fetchAll(); 
 if(count($registrants) > 0) {
-    echo "<h2>People who are registered:</h2>";
+    echo "<h2>Зарегистрированные:</h2>";
     echo "<table>";
     echo "<tr><th>Name</th>";
     echo "<th>Email</th>";
@@ -87,7 +88,7 @@ if(count($registrants) > 0) {
     }
     echo "</table>";
 } else {
-    echo "<h3>No one is currently registered.</h3>";
+    echo "<h3>Никто в настоящее время не зарегистрирован .</h3>";
 }
 ?>
 </body>
