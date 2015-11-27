@@ -12,7 +12,7 @@
     h1, h2, h3,{ color: #000; 
 margin-bottom: 0; padding-bottom: 0; }
     h1 { font-size: 2em; }
-    h2 { font-size: 1.75em; }
+    h2 { font-size: 2em; }
     h3 { font-size: 1.2em; }
     table { margin-top: 0.75em; }
     th { font-size: 1.2em;
