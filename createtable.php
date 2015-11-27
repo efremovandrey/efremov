@@ -1,3 +1,4 @@
+#efremov
 <?php
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
