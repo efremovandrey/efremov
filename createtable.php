@@ -3,7 +3,7 @@
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
 $user = "efremov";
-$pwd = "{ваш_пароль}";
+$pwd = "1Qwertyu";
 $db = "efremovAu91BFbnU";
 try{
     $conn = new PDO
