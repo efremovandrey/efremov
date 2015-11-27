@@ -21,5 +21,5 @@ PDO::ERRMODE_EXCEPTION );
 catch(Exception $e){
     die(print_r($e));
 }
-echo "<h3>Table created.</h3>";
+echo "<h3>Таблица создана.</h3>";
 ?>
