@@ -3,7 +3,7 @@
 <Title>Registration Form</Title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-    body {  url http://allparket.com/mod/wiki/images/bands/1337570133_1_yslygi_po_registrasii_firmu_fs_readmas.ru_3.jpg;
+    body {  url (http://allparket.com/mod/wiki/images/bands/1337570133_1_yslygi_po_registrasii_firmu_fs_readmas.ru_3.jpg);
     }
     h1, h2, h3,{ color: #000; 
 margin-bottom: 0; padding-bottom: 0; }
