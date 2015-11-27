@@ -42,33 +42,25 @@ $host = "tcp:qagmpmy2wy.database.windows.net,1433";
 $user = "efremov";
 $pwd = "1Qwertyu";
 $db = "efremovAu91BFbnU";
-// Connect to database.
-try {
-    $conn = new PDO
-( "sqlsrv:Server= $host ; Database = $db ", $user, $pwd);
-    $conn->setAttribute
-( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-}
-catch(Exception $e){
-    die(var_dump($e));
-}
 if(!empty($_POST)) {
 try {
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $date = date("Y-m-d");
     // Insert data
     $sql_insert = 
-"INSERT INTO registration_tbl (name, email) 
+"INSERT INTO registration_tbl (name, email, date) 
                    VALUES (?,?,?)";
     $stmt = $conn->prepare($sql_insert);
     $stmt->bindValue(1, $name);
     $stmt->bindValue(2, $email);
+    $stmt->bindValue(3, $date);
     $stmt->execute();
 }
 catch(Exception $e) {
     die(var_dump($e));
 }
-echo "<h3>Зарегестрированы</h3>";
+echo "<h3>Your're registered!</h3>";
 }
 ?>
 </body>
