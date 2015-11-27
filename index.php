@@ -76,9 +76,9 @@ $registrants = $stmt->fetchAll();
 if(count($registrants) > 0) {
     echo "<h2>Зарегистрированные:</h2>";
     echo "<table>";
-    echo "<tr><th>Name</th>";
+    echo "<tr><th>Имя</th>";
     echo "<th>Email</th>";
-    echo "<th>Date</th></tr>";
+    echo "<th>Дата</th></tr>";
     foreach($registrants as $registrant) {
         echo "<tr><td>".$registrant['name']."</td>";
         echo "<td>".$registrant['email']."</td>";
