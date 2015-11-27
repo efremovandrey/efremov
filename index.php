@@ -39,7 +39,7 @@ name="submit" value="Submit" />
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
 $user = "efremov";
-$pwd = "1Qwertyu";
+$pwd = "{ваш_пароль}";
 $db = "efremovAu91BFbnU";
 // Connect to database.
 try {
