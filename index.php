@@ -26,9 +26,9 @@ border: 0 none; }
 <p>Заполните ваше имя и адрес электронной почты, затем нажмите кнопку Отправить, чтобы зарегистрироваться.</p>
 <form method="post" action="index.php" 
 enctype="multipart/form-data" >
-      Имя    <input type="text" 
+      Имя <input type="text" 
 name="name" id="name"/></br>
-      Email <input type="text" 
+      Ema <input type="text" 
 name="email" id="email"/></br>
       <input type="submit" 
 name="submit" value="Отправить" />
