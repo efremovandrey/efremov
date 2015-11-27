@@ -15,8 +15,7 @@ PDO::ERRMODE_EXCEPTION );
     id INT NOT NULL IDENTITY(1,1) 
     PRIMARY KEY(id),
     name VARCHAR(30),
-    email VARCHAR(30),
-    data DATE)";
+    email VARCHAR(30))";
     $conn->query($sql);
 }
 catch(Exception $e){
