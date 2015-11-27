@@ -22,7 +22,7 @@ border: 0 none; }
 </style>
 </head>
 <body>
-<h1>Register here!</h1>
+<h1>Регистрация</h1>
 <p>Fill in your name and 
 email address, then click <strong>Submit</strong> 
 to register.</p>
@@ -39,7 +39,7 @@ name="submit" value="Submit" />
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
 $user = "efremov";
-$pwd = "{ваш_пароль}";
+$pwd = "1Qwertyu";
 $db = "efremovAu91BFbnU";
 // Connect to database.
 try {
