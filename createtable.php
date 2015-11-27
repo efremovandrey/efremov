@@ -1,4 +1,3 @@
-# efremov
 <?php
 // DB connection info
 $host = "tcp:qagmpmy2wy.database.windows.net,1433";
@@ -15,7 +14,8 @@ PDO::ERRMODE_EXCEPTION );
     id INT NOT NULL IDENTITY(1,1) 
     PRIMARY KEY(id),
     name VARCHAR(30),
-    email VARCHAR(30))";
+    email VARCHAR(30),
+    date DATE)";
     $conn->query($sql);
 }
 catch(Exception $e){
