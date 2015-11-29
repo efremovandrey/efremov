@@ -67,7 +67,7 @@ try {
 catch(Exception $e) {
     die(var_dump($e));
 }
-echo "<h3>Your're registered!</h3>";
+echo "<h3>Вы зарегистрированы!</h3>";
 }
 $sql_select = "SELECT * FROM registration_tb";
 $stmt = $conn->query($sql_select);
