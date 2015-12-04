@@ -106,6 +106,9 @@ catch(Exception $e) {
 }
 echo "<h3>Вы зарегистрированы!</h3>";
 }
+$sql_select = "SELECT * FROM registration_tb";
+$stmt = $conn->query($sql_select);
+$registrants = $stmt->fetchAll();
     }
 }
     //uspex
@@ -124,9 +127,6 @@ echo "<h3>Вы зарегистрированы!</h3>";
     //eee
     
     
-$sql_select = "SELECT * FROM registration_tb";
-$stmt = $conn->query($sql_select);
-$registrants = $stmt->fetchAll(); 
 if(count($registrants) > 0) {
     echo "<h2>Зарегистрированные:</h2>";
     echo "<table>";
