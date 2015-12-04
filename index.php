@@ -64,6 +64,13 @@ try {
     $stmt->bindValue(3, $date);
     $stmt->execute();
 }
+if(!empty($name) && !empty($email) ) {
+    $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL); 
+
+    if(check_length($name, 2, 25) && $email_validate) {
+        echo "Спасибо за сообщение";
+    }
+}
 catch(Exception $e) {
     die(var_dump($e));
 }
