@@ -104,6 +104,7 @@ if(!empty($name) && !empty($email)) {
         echo "Спасибо за сообщение";
     } else { // добавили сообщение
         echo "Введенные данные некорректные";
+        echo "<meta http-equiv='Refresh' content='0; URL=error.php?item=9'>";
     }
 } else { // добавили сообщение
     echo "Заполните пустые поля";
