@@ -92,23 +92,7 @@ if(!empty($name) && !empty($email)) {
     $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL); 
 
     if(check_length($name, 2, 25) && $email_validate) {
-        $sql_insert = 
-"INSERT INTO registration_tb (name, email, date) 
-                   VALUES (?,?,?)";
-    $stmt = $conn->prepare($sql_insert);
-    $stmt->bindValue(1, $name);
-    $stmt->bindValue(2, $email);
-    $stmt->bindValue(3, $date);
-    $stmt->execute();
-}
-catch(Exception $e) {
-    die(var_dump($e));
-}
-echo "<h3>Вы зарегистрированы!</h3>";
-}
-$sql_select = "SELECT * FROM registration_tb";
-$stmt = $conn->query($sql_select);
-$registrants = $stmt->fetchAll();
+        echo "Спасибо за сообщение";
     }
 }
     //uspex
@@ -125,8 +109,23 @@ $registrants = $stmt->fetchAll();
     echo "Заполните пустые поля";
 }
     //eee
-    
-    
+   $sql_insert = 
+"INSERT INTO registration_tb (name, email, date) 
+                   VALUES (?,?,?)";
+    $stmt = $conn->prepare($sql_insert);
+    $stmt->bindValue(1, $name);
+    $stmt->bindValue(2, $email);
+    $stmt->bindValue(3, $date);
+    $stmt->execute();
+}
+catch(Exception $e) {
+    die(var_dump($e));
+}
+echo "<h3>Вы зарегистрированы!</h3>";
+}
+$sql_select = "SELECT * FROM registration_tb";
+$stmt = $conn->query($sql_select);
+$registrants = $stmt->fetchAll();  
 if(count($registrants) > 0) {
     echo "<h2>Зарегистрированные:</h2>";
     echo "<table>";
