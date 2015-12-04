@@ -55,6 +55,52 @@ try {
     $email = $_POST['email'];
     $date = date("Y-m-d");
     // Insert data
+    //aaaaa
+    function clean($value = "") {
+    $value = trim($value);
+    $value = stripslashes($value);
+    $value = strip_tags($value);
+    $value = htmlspecialchars($value);
+    return $value;
+}
+    //aaaa
+    //bbbb
+    function check_length($value = "", $min, $max) {
+    $result = (mb_strlen($value) < $min || mb_strlen($value) > $max);
+    return !$result;
+}
+    //bbbb
+    //ccc
+    $name = clean($name);
+    $email = clean($email);
+
+if(!empty($name) && !empty($email)) {
+    
+}
+    //ccc
+    //ddd
+    if(!empty($name) && !empty($email)) {
+    $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL); 
+
+    if(check_length($name, 2, 25) && $email_validate) {
+        
+    }
+}
+    //ddd
+    //eee
+    if(!empty($name) && !empty($email)) {
+    $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL); 
+
+    if(check_length($name, 2, 25) && $email_validate) {
+        echo "Спасибо за сообщение";
+    } else { // добавили сообщение
+        echo "Введенные данные некорректные";
+    }
+} else { // добавили сообщение
+    echo "Заполните пустые поля";
+}
+    //eee
+    
     $sql_insert = 
 "INSERT INTO registration_tb (name, email, date) 
                    VALUES (?,?,?)";
