@@ -87,6 +87,28 @@ if(!empty($name) && !empty($email)) {
     }
 }
     //ddd
+    //uspex
+    if(!empty($name) && !empty($email)) {
+    $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL); 
+
+    if(check_length($name, 2, 25) && $email_validate) {
+        $sql_insert = 
+"INSERT INTO registration_tb (name, email, date) 
+                   VALUES (?,?,?)";
+    $stmt = $conn->prepare($sql_insert);
+    $stmt->bindValue(1, $name);
+    $stmt->bindValue(2, $email);
+    $stmt->bindValue(3, $date);
+    $stmt->execute();
+}
+catch(Exception $e) {
+    die(var_dump($e));
+}
+echo "<h3>Вы зарегистрированы!</h3>";
+}
+    }
+}
+    //uspex
     //eee
     if(!empty($name) && !empty($email)) {
     $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL); 
@@ -101,20 +123,7 @@ if(!empty($name) && !empty($email)) {
 }
     //eee
     
-    $sql_insert = 
-"INSERT INTO registration_tb (name, email, date) 
-                   VALUES (?,?,?)";
-    $stmt = $conn->prepare($sql_insert);
-    $stmt->bindValue(1, $name);
-    $stmt->bindValue(2, $email);
-    $stmt->bindValue(3, $date);
-    $stmt->execute();
-}
-catch(Exception $e) {
-    die(var_dump($e));
-}
-echo "<h3>Вы зарегистрированы!</h3>";
-}
+    
 $sql_select = "SELECT * FROM registration_tb";
 $stmt = $conn->query($sql_select);
 $registrants = $stmt->fetchAll(); 
